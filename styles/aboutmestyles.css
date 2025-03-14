@@ -1,0 +1,14 @@
+.interests {
+    display: flex;
+}
+
+#resume-link {
+    display: block;
+    background-color: green;
+    text-decoration: none;
+    margin-left: 15px;
+    width: 100px;
+}
+.navbar {
+    background-color: black;
+}
