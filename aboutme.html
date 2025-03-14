@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./styles/aboutmestyles.css">
+    <link rel="stylesheet" href="./styles/oregonexperience.css">
+    
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar" id="about-nav">
+        <div id="navLinks">
+            <a href="./index.html">Home</a>
+            <a href="index.html#dispersed-camping">Dispersed Camping</a>
+            <a href="index.html#high-rocks">High Rocks</a>
+            <a href="index.html#badger-lake">Badger Lake</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="content">
+        <h1>About Me</h1>
+        <p>I grew up in Portland, Oregon, and went to Cleveland High School in Southeast Portland. WHile at Cleveland, I took IB classes and played for the 
+            baseball team for four years. I was accepted to the Univesity of Oregon and started here in 2023. I'm currently a sophomore pursueing the 
+            Political Science major with minors in Computer Science and Spanish.
+        </p>
+        <div class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Playing the guitar</li>
+                <li>Camping</li>
+                <li>Spending time with my friends</li>
+            </ul>
+        </div>
+        
+        <a id="resume-link" href="goodresume.html">My Resume</a>
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("button").addEventListener("click", function () {
+                let form = document.getElementById("signup-form");
+                if (form.style.display === "none" || form.style.display === "") {
+                    form.style.display = "block"; // Show form
+                } else {
+                    form.style.display = "none"; // Hide form when clicked again
+                }
+            });
+        });
+        function toggleMenu() {
+            const navlinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+    </script>
+</body>
