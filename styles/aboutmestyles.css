@@ -1,0 +1,15 @@
+.interests {
+    display: flex;
+}
+.interests h2 {
+    align-items: left;
+}
+#resume-link {
+    display: block;
+    background-color: green;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.navbar {
+    background-color: black;
+}

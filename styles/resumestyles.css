@@ -1,0 +1,26 @@
+#resume-body {
+    background-color: /*#faf2e4;*/white;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+#resume-h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+    font-size: 50px;
+}
+h2 {
+    text-align: left;
+}
+ul {
+    list-style-type: circle;
+}
+p {
+    text-align: left;
+}
+#navLinks {
+    font-weight: lighter;
+}
