@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #faf2e4;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 1px solid #57b1dc;
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        #navLinks a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles/aboutmestyles.css">
+    <link rel="stylesheet" href="./styles/oregonexperience.css">
+    
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar" id="about-nav">
+        <div id="navLinks">
+            <a href="root/index.html">Home</a>
+            <a href="root/index.html#dispersed-camping">Dispersed Camping</a>
+            <a href="root/index.html#high-rocks">High Rocks</a>
+            <a href="root/index.html#badger-lake">Badger Lake</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="content">
+        <h1>About Me</h1>
+        <p>I grew up in Portland, Oregon, and went to Cleveland High School in Southeast Portland. While at Cleveland, I took several IB classes and played for the 
+            baseball team for four years. I was accepted to the Univesity of Oregon's Clark Honors College and started here in 2023. I'm currently a sophomore pursueing the 
+            Computer Science major with a minor Spanish.
+        </p>
+        <div class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Playing the guitar</li>
+                <li>Camping</li>
+                <li>Spending time with my friends</li>
+            </ul>
+        </div>
+        <div class = "resume">
+            <p>Click the link below to view my resume!</p>
+            <a id="resume-link" href="goodresume.html">My Resume</a>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("button").addEventListener("click", function () {
+                let form = document.getElementById("signup-form");
+                if (form.style.display === "none" || form.style.display === "") {
+                    form.style.display = "block"; // Show form
+                } else {
+                    form.style.display = "none"; // Hide form when clicked again
+                }
+            });
+        });
+        function toggleMenu() {
+            const navlinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+    </script>
+</body>
